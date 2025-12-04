@@ -13,23 +13,23 @@ let secaoConfiguracoes = document.getElementById('configuracoes');
 let botaoAtual = botaoInicio;
 let secaoAtual = secaoInicio;
 
-botaoInicio.addEventListener('click', function() {
+botaoInicio.addEventListener('click', function () {
     trocarSecao(secaoInicio, botaoInicio);
 });
 
-botaoConta.addEventListener('click', function() {
+botaoConta.addEventListener('click', function () {
     trocarSecao(secaoConta, botaoConta);
 });
 
-botaoAddSorvete.addEventListener('click', function() {
+botaoAddSorvete.addEventListener('click', function () {
     trocarSecao(secaoAddSorvete, botaoAddSorvete);
 });
 
-botaoEstoque.addEventListener('click', function() {
+botaoEstoque.addEventListener('click', function () {
     trocarSecao(secaoEstoque, botaoEstoque);
 });
 
-botaoConfiguracoes.addEventListener('click', function() {
+botaoConfiguracoes.addEventListener('click', function () {
     trocarSecao(secaoConfiguracoes, botaoConfiguracoes);
 });
 

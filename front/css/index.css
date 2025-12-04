@@ -216,7 +216,12 @@ main {
     justify-content: space-evenly;
 }
 
-#grafico2 {}
+#grafico2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 #sorvete_menos_consumido {
     display: flex;
