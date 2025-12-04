@@ -14,29 +14,33 @@ let botaoAtual = botaoInicio;
 let secaoAtual = secaoInicio;
 
 botaoInicio.addEventListener('click', function() {
-    trocarSecao(secaoInicio);
+    trocarSecao(secaoInicio, botaoInicio);
 });
 
 botaoConta.addEventListener('click', function() {
-    trocarSecao(secaoConta);
+    trocarSecao(secaoConta, botaoConta);
 });
 
 botaoAddSorvete.addEventListener('click', function() {
-    trocarSecao(secaoAddSorvete);
+    trocarSecao(secaoAddSorvete, botaoAddSorvete);
 });
 
 botaoEstoque.addEventListener('click', function() {
-    trocarSecao(secaoEstoque);
+    trocarSecao(secaoEstoque, botaoEstoque);
 });
 
 botaoConfiguracoes.addEventListener('click', function() {
-    trocarSecao(secaoConfiguracoes);
+    trocarSecao(secaoConfiguracoes, botaoConfiguracoes);
 });
 
-function trocarSecao(secao) {
+function trocarSecao(secao, botao) {
     secaoAtual.style.position = 'fixed';
     secao.style.position = 'static';
     secaoAtual = secao;
+
+    botaoAtual.classList.remove('botaoSelecionado');
+    botao.classList = 'botaoSelecionado botao1';
+    botaoAtual = botao;
 }
 
 $(document).ready(function () {
